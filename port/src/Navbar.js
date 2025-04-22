@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import { useLocation, Link } from "react-router-dom"; 
+import { Link } from "react-router-dom"; 
 import "./Navigation.css";
 import { FaLinkedinIn, FaGithub, FaEnvelope } from "react-icons/fa"; // Removed FaTwitter
 
 const Navigation = () => {
-  const location = useLocation();  // If you aren't using location, you can remove this line as well.
   const [showMobileMenu, setShowMobileMenu] = useState(false);
 
   const toggleMobileMenu = () => setShowMobileMenu(!showMobileMenu);
