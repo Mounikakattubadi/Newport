@@ -39,7 +39,7 @@ const About = () => {
               <p>
                 Building modern websites using React, Node, MongoDB & Express with clean, customizable code.
               </p>
-              <a href="#" className="btn-custom-sm">See More</a>
+              <button className="btn-custom-sm link-style">See More</button>
             </div>
           </div>
           <div className="col-md-4">
@@ -49,7 +49,7 @@ const About = () => {
               <p>
                 Designing intuitive and visually pleasing interfaces with attention to usability and responsiveness.
               </p>
-              <a href="#" className="btn-custom-sm">See More</a>
+              <button className="btn-custom-sm link-style">See More</button>
             </div>
           </div>
           <div className="col-md-4">
@@ -59,7 +59,7 @@ const About = () => {
               <p>
                 Working knowledge of CMS platforms like WordPress for content-heavy projects or blog integration.
               </p>
-              <a href="#" className="btn-custom-sm">See More</a>
+              <button className="btn-custom-sm link-style">See More</button>
             </div>
           </div>
         </div>

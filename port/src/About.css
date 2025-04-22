@@ -91,3 +91,11 @@
     align-items: center;
   }
 }
+
+.link-style {
+  background: none;
+  color: inherit;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+}
