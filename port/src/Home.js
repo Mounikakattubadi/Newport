@@ -23,9 +23,15 @@ const Home = () => {
         </div>
         <p className="social-text">FOLLOW ME ON :</p>
         <div className="social-icons">
-          <a href="#"><i className="fab fa-facebook-f"></i></a>
-          <a href="#"><i className="fab fa-twitter"></i></a>
-          <a href="#"><i className="fab fa-linkedin-in"></i></a>
+          <a href="https://www.facebook.com/yourprofile" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.twitter.com/yourprofile" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-linkedin-in"></i>
+          </a>
         </div>
       </div>
     </div>
