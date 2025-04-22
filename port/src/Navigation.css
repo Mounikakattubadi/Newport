@@ -1,3 +1,4 @@
+/* Navbar */
 .navbar {
   background: rgba(24, 24, 24, 0.95);
   padding: 14px 30px;
@@ -9,6 +10,7 @@
   z-index: 1000;
 }
 
+/* Brand */
 .navbar-brand {
   font-size: 1.8rem;
   font-weight: bold;
@@ -21,6 +23,7 @@
   cursor: default;
 }
 
+/* Hamburger for Mobile */
 .menu-toggle {
   display: none;
   flex-direction: column;
@@ -36,84 +39,27 @@
   border-radius: 2px;
 }
 
+/* Navigation Items */
 .nav-items {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 25px;
 }
 
-.nav-link {
-  font-size: 1.05rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  position: relative;
-  color: #ff4a9c;
-  text-decoration: none;
-  cursor: pointer;
+/* Social Icon Links */
+.nav-icon {
+  font-size: 1.4rem;
+  color: #ffffff;
   transition: color 0.3s ease;
+  text-decoration: none;
 }
 
-.nav-link:hover {
-  color: #fff;
+.nav-icon:hover {
+  color: #ff4a9c;
   text-shadow: 0 0 8px #ff4a9c;
 }
 
-.nav-link::after {
-  content: "";
-  position: absolute;
-  bottom: -6px;
-  left: 0;
-  height: 3px;
-  width: 0;
-  background: linear-gradient(90deg, #ff4a9c, #a75aff);
-  transition: width 0.3s ease;
-}
-
-.nav-link:hover::after {
-  width: 100%;
-}
-
-.nav-link.active {
-  color: #fff;
-}
-
-.dropdown {
-  position: relative;
-}
-
-.arrow {
-  margin-left: 4px;
-  font-size: 0.8rem;
-}
-
-.dropdown-menu {
-  position: absolute;
-  top: 120%;
-  left: 0;
-  background-color: #1e1e1e;
-  padding: 10px 0;
-  border-radius: 6px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
-  min-width: 140px;
-  z-index: 9999;
-}
-
-.dropdown-menu a {
-  display: block;
-  padding: 10px 20px;
-  font-size: 0.95rem;
-  font-weight: bold;
-  color: #fd499a;
-  text-decoration: none;
-  transition: background 0.2s ease;
-}
-
-.dropdown-menu a:hover {
-  background-color: #2c2c2c;
-  color: #fff;
-}
-
-/* Responsive */
+/* Mobile Menu */
 @media (max-width: 991px) {
   .menu-toggle {
     display: flex;
@@ -134,22 +80,10 @@
 
   .nav-items.active {
     display: flex;
+    gap: 20px;
   }
 
-  .dropdown-menu {
-    position: static;
-    background: none;
-    box-shadow: none;
-    padding: 0;
-  }
-
-  .dropdown-menu a {
-    padding: 8px 0;
-    color: #ff4e9e;
-  }
-
-  .dropdown-menu a:hover {
-    background: none;
-    color: #fff;
+  .nav-icon {
+    font-size: 1.5rem;
   }
 }

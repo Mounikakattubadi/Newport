@@ -1,7 +1,16 @@
+/* GLOBAL RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Wrapper */
 .home-wrapper {
   display: flex;
   height: 100vh;
   font-family: 'Segoe UI', sans-serif;
+  overflow-x: hidden;
 }
 
 /* Left Side with Triangle & Image */
@@ -40,6 +49,7 @@
   color: #111;
   padding: 120px 80px 80px;
   position: relative;
+  overflow-x: hidden;
 }
 
 .subtitle {
@@ -124,17 +134,53 @@
   color: #6f42c1;
 }
 
+/* Bottom Navigation inside home-right */
+.bottom-nav {
+  margin-top: 40px;
+}
+
+.bottom-nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.bottom-nav li {
+  margin: 0;
+}
+
+.bottom-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.bottom-nav a:hover {
+  color: #6f42c1;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .home-wrapper {
     flex-direction: column;
+    overflow-x: hidden;
   }
 
-  .home-left, .home-right {
+  .home-left,
+  .home-right {
     flex: none;
     width: 100%;
     clip-path: none;
     padding: 2rem;
+  }
+
+  .home-right {
+    padding: 2rem;
+    overflow-x: hidden;
   }
 
   .triangle-frame {
@@ -148,5 +194,10 @@
 
   .button-group {
     flex-direction: column;
+  }
+
+  .bottom-nav ul {
+    justify-content: center;
+    gap: 15px;
   }
 }

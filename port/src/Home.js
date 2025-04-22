@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Home.css';
 import mouniImage from './images/mouni.jpg';
 
@@ -10,6 +11,7 @@ const Home = () => {
           <img src={mouniImage} alt="Mounika" className="profile-img" />
         </div>
       </div>
+
       <div className="home-right">
         <h2 className="subtitle">I'm a</h2>
         <h1 className="title">Web Dev<span>eloper</span></h1>
@@ -19,20 +21,10 @@ const Home = () => {
         </p>
         <div className="button-group">
           <button className="btn btn-light">Get Started</button>
-          <button className="btn btn-primary">View Portfolio</button>
-        </div>
-        <p className="social-text">FOLLOW ME ON :</p>
-        <div className="social-icons">
-          <a href="https://www.facebook.com/yourprofile" target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-facebook-f"></i>
-          </a>
-          <a href="https://www.twitter.com/yourprofile" target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-twitter"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-linkedin-in"></i>
-          </a>
-        </div>
+          <Link to="/full-portfolio">
+  <button className="btn btn-primary">View Portfolio</button>
+</Link>        </div>
+
       </div>
     </div>
   );

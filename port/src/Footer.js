@@ -34,7 +34,6 @@ const Footer = () => {
       <div className="footer-bottom">
         <p className="mb-0">© {new Date().getFullYear()} Mounika Kattubadi. All Rights Reserved.</p>
         <div className="footer-socials">
-          <a href="https://facebook.com" target="_blank" rel="noreferrer"><FaFacebookF /></a>
           <a href="https://twitter.com" target="_blank" rel="noreferrer"><FaTwitter /></a>
           <a href="https://www.linkedin.com/in/mounika-kattubadi-0156b4351" target="_blank" rel="noreferrer"><FaLinkedinIn /></a>
           <a href="https://github.com/MounikaKattubadi" target="_blank" rel="noreferrer"><FaGithub /></a>
