@@ -1,0 +1,116 @@
+/* Projects Section Styles */
+.projects-section {
+  background-color: #f7f7f7; /* Soft pale white background */
+  color: #333333; /* Dark text for contrast */
+  min-height: 100vh;
+  padding-bottom: 5rem;
+  text-align: center;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #6f42c1; /* Purple highlight */
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+
+
+/* Card Layout */
+.row.g-4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.project-card {
+  background-color: #ffffff; /* Soft white background */
+  border: 1px solid #e6e6e6; /* Light grey border */
+  color: #333333; /* Dark text */
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 350px;
+  width: 100%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* Light shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Soft shadow on hover */
+  border-color: #b983ff; /* Soft purple border on hover */
+}
+
+.card-body {
+  padding: 0;
+}
+
+.card-title {
+  color: #333333;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555555;
+  margin-bottom: 1rem;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+ul li {
+  font-size: 0.95rem;
+  color: #555555;
+  line-height: 1.6;
+  margin-right: 1rem;
+  margin-bottom: 0.6rem;
+  flex: 0 1 auto;
+  
+}
+
+ul li:last-child {
+  margin-right: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2.2rem;
+  }
+
+  .project-card {
+    padding: 1.5rem;
+    max-width: 100%;
+  }
+
+  .card-title {
+    font-size: 1.3rem;
+  }
+
+  ul li {
+    font-size: 0.85rem;
+    margin-right: 0.5rem;
+  }
+}
+
+/* Prevent link underline and maintain color */
+.link-no-style {
+  text-decoration: none;
+  color: inherit;
+}
+
+.link-no-style:hover {
+  color: inherit;
+}
+
