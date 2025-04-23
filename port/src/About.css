@@ -136,3 +136,9 @@
   color: #555;
   font-size: 1rem;
 }
+
+@media (max-width: 600px){
+  .container{
+    margin-top: 18%;
+  }
+}
