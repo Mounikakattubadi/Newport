@@ -8,14 +8,12 @@ import "./About.css";
 import "./Skills.css";
 
 const About = () => {
-  // Create a ref for the skills section
   const skillsSectionRef = useRef(null);
 
-  // Scroll to the skills section when the button is clicked
   const scrollToSkills = () => {
     if (skillsSectionRef.current) {
       skillsSectionRef.current.scrollIntoView({
-        behavior: "smooth", // for smooth scrolling
+        behavior: "smooth",
         block: "start",
       });
     }
@@ -39,18 +37,40 @@ const About = () => {
             Currently pursuing a B.Tech in Computer Science at <strong>IIIT RGUKT RK Valley</strong>.
           </p>
 
+          {/* EDUCATION SECTION */}
+          <div className="education-section my-5">
+            <h2 className="section-title">Education</h2>
+
+            <div className="education-entry">
+              <h4>B.Tech in Computer Science and Engineering</h4>
+              <p><strong>IIIT, RK Valley, RGUKT</strong> | 2020 - 2024</p>
+              <p>CGPA: 8.3</p>
+            </div>
+
+            <div className="education-entry">
+              <h4>Pre-University Course (PUC) - M.P.C</h4>
+              <p><strong>IIIT, RK Valley, RGUKT</strong> | 2018 - 2020</p>
+              <p>CGPA: 8.66</p>
+            </div>
+
+            <div className="education-entry">
+              <h4>Secondary School Certificate (SSC)</h4>
+              <p><strong>GVEZPGHS, Dharmavaram</strong> | 2018</p>
+              <p>GPA: 10</p>
+            </div>
+          </div>
+
           <div className="btn-group-custom">
             <button onClick={scrollToSkills} className="btn-custom secondary">Skillset</button>
           </div>
         </div>
 
-        {/* COMBINED ABOUT ME AND SKILLS SECTION */}
+        {/* SKILLSET SECTION */}
         <Container className="skills-container my-5 py-5">
           <Card className="skills-card shadow-lg p-4">
             <Row className="justify-content-center">
               <Col lg={10}>
                 <Row>
-                  {/* Right: Skills + Icons */}
                   <Col md={4} ref={skillsSectionRef} className="skills-side d-flex flex-column align-items-center">
                     <h2 className="section-title">Skillset</h2>
                     <div className="skill-list mt-3">

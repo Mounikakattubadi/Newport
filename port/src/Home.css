@@ -4,7 +4,12 @@
   margin: 0;
   padding: 0;
 }
-
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+  
 /* Wrapper */
 .home-wrapper {
   display: flex;
@@ -114,6 +119,59 @@
 
 .btn-primary:hover {
   background-color: #5a34a2;
+}
+
+/* Long S-Shaped Scroll Down Arrow */
+.scroll-down {
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 50px;
+}
+
+.s-arrow {
+  animation: bounce 2s infinite, float 3s ease-in-out infinite;
+}
+
+/* Bouncing and Floating Effect */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Added Arrow Image */
+.arrow-img {
+  width: 180px;
+  margin-top: 15px;
+  animation: bounceArrow 2s infinite;
+  height: 180px;
+}
+
+@keyframes bounceArrow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
 }
 
 /* Social */

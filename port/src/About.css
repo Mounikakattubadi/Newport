@@ -108,3 +108,31 @@
   background: none;
   cursor: pointer;
 }
+
+.education-section {
+  padding-top: 20px;
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.education-entry {
+  margin-bottom: 20px;
+}
+
+.education-entry h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #6c63ff;
+}
+
+.education-entry p {
+  margin: 4px 0;
+  color: #555;
+  font-size: 1rem;
+}

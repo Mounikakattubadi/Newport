@@ -1,13 +1,9 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom"; 
+import React from "react";
+import { Link } from "react-router-dom";
 import "./Navigation.css";
 import { FaLinkedinIn, FaGithub, FaEnvelope } from "react-icons/fa"; // Removed FaTwitter
 
-const Navigation = () => {
-  const [showMobileMenu, setShowMobileMenu] = useState(false);
-
-  const toggleMobileMenu = () => setShowMobileMenu(!showMobileMenu);
-
+const Navigation = ({ toggleMobileMenu, showMobileMenu }) => {
   return (
     <nav className="navbar">
       <div className="navbar-brand">
@@ -36,3 +32,4 @@ const Navigation = () => {
 };
 
 export default Navigation;
+  
